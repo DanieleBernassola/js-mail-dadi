@@ -7,12 +7,21 @@ Mail
 <!-- controlla che sia nella lista di chi può accedere, -->
 
 - creo una listaEmail (array) di email
+- creo una variabile emailIsPresent e la imposto a 0 per verificare se sarà presente l'email
 
-- dentro un ciclo for verifico la condizione:
-SE emailUser === listaEmail[i]{
-    console.log('Accesso consentito!')
-} else {
-    console.log('Accesso non consentito!')
+- creo un ciclo che verifica se l'email è presente:
+
+for (let i = 0; i < listaEmail.length; i++){
+    if (emailUser === listaEmail[i]){
+        emailIsPresent = 1;
+    }
+}
+
+
+SE (emailIsPresent === 1){
+    console.log('Accesso consentito!');
+} ALTRIMENTI {
+    console.log('Accesso non consentito!');
 }
 
 <!-- stampa un messaggio appropriato sull’esito del controllo. -->
