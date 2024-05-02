@@ -8,8 +8,8 @@
 
 SE (numeroRandomUser > numeroRandomComputer) {
     console.log('Hai vinto!');
-} Altrimenti SE (numeroRandomUser < numeroRandomComputer) {
+} Altrimenti SE (numeroRandomUser === numeroRandomComputer) {
+    console.log('Hai ottenuto lo stesso punteggio del computer!');
+} Altrimenti{
     console.log('Il computer ha vinto!');
-} Altrimenti SE (numeroRandomUser == numeroRandomComputer) {
-    console.log('Hai ottenuto lo stesso punteggio del computer!')
 }
